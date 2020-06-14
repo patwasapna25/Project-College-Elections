@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VESIT Elections</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            /* top: 0px;
+            right: 0px; */
+            height: 10%;
+            width: 100%;
+            z-index: -1;
+            opacity: 1.5;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: white;
+            border-radius: 20px;
+            padding: 3px 15px;
+            margin: 22px 16px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        #home {
+            display: flex;
+            height: 503px;
+        }
+
+        #home::before {
+            content: "";
+            background: url('bg2.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 80%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.85;
+
+        }
+
+        #container {
+            display: flex;
+            height: 120px;
+            background-color: black;
+            color: white;
+            /* justify-content: center; */
+        }
+
+        #container h1 {
+            margin: 23px 34px;
+            padding: 40px 50px;
+            font-size: 2.3rem;
+        }
+
+        #logo img {
+            margin: 8px 100px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(13, 13, 14);
+            color: white;
+            padding: 3px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Login</a></li>
+            <li class="item"><a href="#">Results</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <!-- <h1>Welcome to VESIT</h1> -->
+    </section>
+
+    <section id="container">
+        <h1>Vivekanand Education Society's Institue of Technology (VESIT)</h1>
+        <div id="logo">
+            <img src="Logo.png" alt="VESIT">
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright  &copy; 2019,All rights reserved. Vivekanand Education Society
+        </div>
+    </footer>
+</body>
+
+</html>
