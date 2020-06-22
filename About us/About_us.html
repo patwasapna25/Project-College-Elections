@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background: url(about_bg.jpg);
+            color: white;
+
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            /* top: 0px;
+            right: 0px; */
+            height: 17%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: white;
+            border-radius: 20px;
+            padding: 3px 15px;
+            margin: 23px 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        #logo{
+            padding: 5px 10px;
+        }
+
+        .container {
+            margin: 35px 50px;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            width: 50vw;
+        }
+
+        .objective,
+        .voting {
+            font-size: 1.4rem;
+            padding: 41px 24px;
+        }
+
+        .voting{
+            border-bottom: 1px solid gray;
+            border-top: 1px solid gray;
+        }
+
+        .voting ul{
+            padding: 13px;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(13, 13, 14);
+            color: white;
+            padding: 3px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.png" alt="VESIT">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Login</a></li>
+            <li class="item"><a href="#">Results</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="item"><a href="#">Contact Us</a></li>
+            <li class="item"><a href="#">Councils</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="objective">
+            <h3>About us</h3>
+            An <em>election</em> is a formal group decision-making process by which a population chooses an
+            individual to hold public office. ... To elect means "to select or make a decision". Our website provides a
+            modern and anonymous way to vote and elect leaders.
+        </div>
+        <div class="voting">
+            <h3>Voting process</h3>
+            <ul>
+                <li>Nomination of all the members of students council will be held as per the rules prescribed by the
+                    University and on the date announced by it.</li>
+                <li>The Student's council shall consist of the following :
+                    <ul>
+                        <li>Two students(male and female) from the each class,who has shown academic merit at the
+                            examination held in the preceding year and who is engaged in the full time studies int the
+                            college, elected by the students</li>
+                    </ul>
+                </li>
+                
+                <li>The student members of the student council shall elect from amongst themselves,the secretary of
+                    their council and his or her name will be sent to the Students Council of college</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="center">
+            Copyright &copy; 2019,All rights reserved. Vivekanand Education Society
+        </div>
+    </footer>
+</body>
+
+</html>
