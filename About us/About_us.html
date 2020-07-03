@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Aref+Ruqaa&display=swap" rel="stylesheet">
+    <title>About Us</title>
     <style>
-        *{
+        * {
             margin: 0px;
             padding: 0px;
         }
+
         body {
-            background: url(about_bg.jpg);
+            background-image: linear-gradient(rgba(25, 23, 23, 0.4), rgba(25, 23, 23, 0.4)), url(background.jpg);
             color: white;
 
         }
@@ -49,6 +51,7 @@
             padding: 3px 15px;
             margin: 23px 20px;
             text-decoration: none;
+            font-family: 'Aref Ruqaa', serif;
         }
 
         #navbar ul li a:hover {
@@ -56,7 +59,7 @@
             background-color: white;
         }
 
-        #logo{
+        #logo {
             padding: 5px 10px;
         }
 
@@ -65,7 +68,12 @@
             display: flex;
             flex-direction: column;
             height: 90vh;
-            width: 50vw;
+            width: 85vw;
+        }
+
+        .about{
+            display: flex;
+            justify-content: center;
         }
 
         .objective,
@@ -74,22 +82,31 @@
             padding: 41px 24px;
         }
 
-        .voting{
+        .voting {
             border-bottom: 1px solid gray;
             border-top: 1px solid gray;
         }
+        div{
+            font-family: 'Aref Ruqaa', serif;
+        }
+        div h3{
+            font-size: 30   px;
+            font-family: 'Aref Ruqaa', serif;
+        }
 
-        .voting ul{
+        .voting ul {
             padding: 13px;
             margin-top: 20px;
         }
 
         footer {
             text-align: center;
-            background-color: rgb(13, 13, 14);
+            background-color: rgb(37, 37, 37);
+            margin-top: 20px;
             color: white;
             padding: 3px 20px;
         }
+
     </style>
 </head>
 
@@ -107,29 +124,34 @@
             <li class="item"><a href="#">Councils</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="objective">
-            <h3>About us</h3>
-            An <em>election</em> is a formal group decision-making process by which a population chooses an
-            individual to hold public office. ... To elect means "to select or make a decision". Our website provides a
-            modern and anonymous way to vote and elect leaders.
-        </div>
-        <div class="voting">
-            <h3>Voting process</h3>
-            <ul>
-                <li>Nomination of all the members of students council will be held as per the rules prescribed by the
-                    University and on the date announced by it.</li>
-                <li>The Student's council shall consist of the following :
-                    <ul>
-                        <li>Two students(male and female) from the each class,who has shown academic merit at the
-                            examination held in the preceding year and who is engaged in the full time studies int the
-                            college, elected by the students</li>
-                    </ul>
-                </li>
-                
-                <li>The student members of the student council shall elect from amongst themselves,the secretary of
-                    their council and his or her name will be sent to the Students Council of college</li>
-            </ul>
+    <div class="about">
+        <div class="container">
+            <div class="objective">
+                <h3>About us</h3>
+                An <em>election</em> is a formal group decision-making process by which a population chooses an
+                individual to hold public office. ... To elect means "to select or make a decision". Our website
+                provides a
+                modern and anonymous way to vote and elect leaders.
+            </div>
+            <div class="voting">
+                <h3>Voting process</h3>
+                <ul>
+                    <li>Nomination of all the members of students council will be held as per the rules prescribed by
+                        the
+                        University and on the date announced by it.</li>
+                    <li>The Student's council shall consist of the following :
+                        <ul>
+                            <li>Two students(male and female) from the each class,who has shown academic merit at the
+                                examination held in the preceding year and who is engaged in the full time studies int
+                                the
+                                college, elected by the students</li>
+                        </ul>
+                    </li>
+
+                    <li>The student members of the student council shall elect from amongst themselves,the secretary of
+                        their council and his or her name will be sent to the Students Council of college</li>
+                </ul>
+            </div>
         </div>
     </div>
     <footer>

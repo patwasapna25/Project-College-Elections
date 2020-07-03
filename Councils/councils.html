@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Council</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Aref+Ruqaa&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+
+        body {
+            background-image: linear-gradient(rgba(25, 23, 23, 0.4), rgba(25, 23, 23, 0.4)), url('background.jpg');
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            /* top: 0px;
+            right: 0px; */
+            height: 17%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: white;
+            border-radius: 20px;
+            padding: 3px 15px;
+            margin: 23px 30px;
+            text-decoration: none;
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        #logo img {
+            margin: 8px 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            padding: 3px 20px;
+            margin-top: 50px;
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        .head {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .heading {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 35px;
+            color: #bcdad4;
+            margin-top: 100px;
+            padding-top: -170px;
+            padding-left: 320px;
+        }
+
+        div h2 {
+            text-shadow: 2px 2px 1px #92de8778;
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        div h3 {
+            font-family: 'Aref Ruqaa', serif;
+        }
+
+        .heading1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            color: #b4d6d0;
+            text-align: center;
+            margin-top: 20px;
+            width: 80vw;
+            padding-top: -170px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #315e67;
+            box-shadow: 4px 4px 11px 4px rgba(181, 207, 214, 0.5);
+        }
+
+        .stpic1 {
+            margin: -270px 690px;
+
+        }
+
+        .stpic2 {
+
+            margin: -270px 1040px;
+            padding-top: 15px;
+
+
+        }
+
+        .cul1 {
+            margin-top: -300px;
+            margin-left: 690px;
+            margin-bottom: 45px;
+
+
+        }
+
+        .cul2 {
+            margin-top: -308px;
+            margin-left: 1040px
+        }
+
+        .mus1 {
+            margin: -240px 690px;
+
+        }
+
+        .mus2 {
+            margin: -265px 1040px;
+
+        }
+
+        .sp5 {
+            margin-top: -200px;
+            padding-left: 690px;
+
+        }
+
+        .sp3 {
+            margin-top: -265px;
+            margin-left: 1040px
+        }
+
+        .ecell1 {
+            margin: -200px 1040px;
+
+        }
+
+        .ecell2 {
+            margin: -265px 690px;
+            margin-bottom: 20px;
+
+        }
+
+        .cr1 {
+            margin: -220px 1040px;
+
+
+        }
+
+        .cr2 {
+            margin: -240px 690px;
+
+        }
+
+        .amphi {
+            /* <!--          top right bottom left--> */
+            margin: -3px, 50px, 200px, 100px;
+            font-size: 15px;
+            font-family: 'Aref Ruqaa', serif;
+            font-weight: bold;
+
+        }
+
+        .zoom {
+            padding: 50px;
+            background-color: #abbdbac2;
+            transition: transform .2s;
+            /* Animation */
+            width: 570px;
+            height: 280px;
+            margin: 25px;
+            box-shadow: 4px 4px 11px 4px rgba(67, 115, 114);
+        }
+
+        .zoom1 {
+            padding: 30px;
+            background-color: #A93226;
+            transition: transform .2s;
+            /* Animation */
+            width: 400px;
+            height: 190px;
+            margin: -2px;
+        }
+
+        .zoom1:hover {
+            transform: scale(1.1);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+
+
+
+        .zoom:hover {
+            transform: scale(1.1);
+            /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Logo.png">
+        </div>
+        <ul>
+            <li class="item"><a href="/home/">Home</a></li>
+            <li class="item"><a href="/accounts/google/login">Login</a></li>
+            <li class="item"><a href="/councils/">Council</a></li>
+            <li class="item"><a href="/results/">Results</a></li>
+            <li class="item"><a href="/about/">About</a></li>
+            <li class="item"><a href="/contact/">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+
+        <div class="heading1">
+            <h2>VESIT STUDENT COUNCIL</h2>
+            <h3>It consists of the following:</h3>
+            <h3>Social Responsibility(SORT),CULTURAL,MUSIC,SPORTS,ECELL and Class Representative(CR)</h3>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>SORT</h2>
+    </div>
+    <div class="zoom">
+        <div class="amphi my-14">
+            <span>The greatest good you can do for another is not just share your riches, but reveal to them their own.
+                – Benjamin Disraeli.
+                <br>SoRT-VESIT, since its inception, has endeavored to stay true to this very idea with its one of a
+                kind unity,
+                inspiration, dedication and perseverance. With plenty of activities and events that bear testimony to
+                this,here are the highlights of year 2018-2019.
+                <br>SoRT VESIT in collaboration with VF foundation, Wadala, contributed to the movement ‘Rise for
+                Kerala, Stand for Kerala.
+                It was a three day donation drive to lend a helping hand ,to thousands of people who lost their
+                beautiful paradise in a blink
+                of an eye.UMEED 18&nbsp; SoRT VESIT collaborated with various NGOs and sold their products on desks
+                across the college. This
+                year we collaborated with: NASEOH, Chembur;&nbsp;Self Esteem, Airoli ;&nbsp;&nbsp;We Change,
+                Thane;&nbsp;&nbsp;Aseema, Bandra;&nbsp;Balanand, Chembur;&nbsp;
+                Kshamata, Thane;&nbsp;&nbsp;RUR, Mahim;&nbsp;&nbsp;Snehalaya, Thane.&nbsp;<br><br>
+            </span>
+        </div>
+        <div class="stpic1">
+            <img src="sort1.jpg" alt="pic" width="280px" height="250px">
+        </div>
+
+        <div class="stpic2">
+            <img src="sort3.png" alt="pic" width="280px" height="250px">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>CULTURAL</h2>
+    </div>
+
+
+    <div class="zoom">
+        <div class="amphi">
+            <span> Cultural Council over the years has been organising events that bring together fun, knowledge,
+                creativity, innovation and freshness in various aspects of our life..
+                <br>Prarambh is an event hosted for welcoming the freshers of the undergraduate and MCA
+                courses.<br>Illusion the only league format cultural event in VESIT with the objective of promoting
+                intra-college bonding and identifying the most phenomenal talents in the institution. Illusion provides
+                a grand arena for students to compete with each other and unlock individual
+                potential. The Council discovers a unique formula for a fun filled event which demanded excellence from
+                the participants.
+                <br>Utsav is an annual college event conducted in March. In Utsav the events are conducted branch wise.
+                These competitions are conducted for Juniors and Seniors separately.
+                The Junior group consists of FE and SE while the Senior consists of TE and BE.
+            </span>
+        </div>
+        <div>
+            <img class="cul1" src="cul1.jpg" alt="pic" width="280px" height="260px">
+        </div>
+
+        <div class="cul2">
+            <img src="cul2.jpg" alt="pic" width="280px" height="260px">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>MUSIC</h2>
+    </div>
+
+    <div class="zoom">
+        <div class="amphi">
+            <span>Music is something that touches our souls in one of the most beautiful ways. It cannot be seen but
+                just be felt from the
+                heart and even though it may not be a part of our lives, it isn’t apart from us either.
+                And there could be no better way than to start off the new academic year with some beautiful music.<br>
+                The VESIT Music council began their musical journey with BLISS’18. It was held in the college auditorium
+                on the 27th of August, 2018.
+                In Bliss every year, only the council members and a few other students are allowed to perform.
+                <br>With final submissions, Unit Tests and Vivas on the swing now, October was truly in the heat.
+                October wished for some leisure and fun. October’s wishes were granted!! October was given an amazingly
+                fun musical gift- OCTAVES’ 18,
+                two days full of just music– people talking about music, playing music and enjoying music.
+
+            </span>
+        </div>
+        <div class="mus1">
+            <img src="mus1.jpg" alt="pic" width="280px" height="260px">
+        </div>
+        <div class="mus2">
+            <img src="mus2.jpg" alt="pic" width="280px" height="260px">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>SPORTS</h2>
+    </div>
+    <div class="zoom">
+        <div class="amphi">
+            <span>Campus Features & Facilities<br>
+                Lush Green Campus spread in 25 acres of land.<br>
+                Modern WI-FI Campus and “State-of-the-Art” Classrooms.<br>
+                Fully equipped Computer labs with Broadband Internet Facilities.<br>
+                Every Classroom is well-equipped with projector.<br>
+                Guest Lectures of renowned personalities from corporate and academia.<br>
+                Regular Industrial Visits for students under the 3i Program ( Institute- Industry Interface)<br>
+                Multi-Cuisine Cafeteria<br>
+                Indoor and Outdoor Sports<br>
+            </span>
+        </div>
+        <div class="sp5">
+            <img src="sp5.jpg" alt="pic" width="280px" height="260px">
+        </div>
+        <div class="sp3">
+            <img src="sp3.jpg" alt="pic" width="280px" height="260px">
+        </div>
+    </div>
+
+
+    <div class="heading">
+        <h2>ECELL</h2>
+    </div>
+    <div class="zoom">
+        <div class="amphi">
+            <span>Campus Features & Facilities<br>
+                Lush Green Campus spread in 25 acres of land.<br>
+                Modern WI-FI Campus and “State-of-the-Art” Classrooms.<br>
+                Fully equipped Computer labs with Broadband Internet Facilities.<br>
+                Every Classroom is well-equipped with projector.<br>
+                Guest Lectures of renowned personalities from corporate and academia.<br>
+                Regular Industrial Visits for students under the 3i Program ( Institute- Industry Interface)<br>
+                Multi-Cuisine Cafeteria<br>
+                Indoor and Outdoor Sports<br>
+            </span>
+        </div>
+        <div class="ecell1">
+            <img src="ecell1.jpeg" alt="pic" width="280px" height="260px">
+        </div>
+        <div class="ecell2">
+            <img src="ecell2.jpg" alt="pic" width="280px" height="260px">
+        </div>
+    </div>
+
+
+
+    <div class="heading">
+        <h2>CR</h2>
+    </div>
+    <div class="zoom">
+        <div class="amphi">
+            <span>Campus Features & Facilities<br>
+                Lush Green Campus spread in 25 acres of land.<br>
+                Modern WI-FI Campus and “State-of-the-Art” Classrooms.<br>
+                Fully equipped Computer labs with Broadband Internet Facilities.<br>
+                Every Classroom is well-equipped with projector.<br>
+                Guest Lectures of renowned personalities from corporate and academia.<br>
+                Regular Industrial Visits for students under the 3i Program ( Institute- Industry Interface)<br>
+                Multi-Cuisine Cafeteria<br>
+                Indoor and Outdoor Sports<br>
+            </span>
+        </div>
+        <div class="cr1">
+            <img src="cr1.png" alt="pic" width="280px" height="260px">
+        </div>
+        <div class="cr2">
+            <img src="cr2.jpg" alt="pic" width="280px" height="260px">
+        </div>
+    </div>
+    <section id="home">
+    </section>
+    <!-- <section id="container">
+        <h1>Vivekanand Education Society's Institute of Technology (VESIT)</h1> -->
+
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; 2019,All rights reserved. Vivekanand Education Society
+        </div>
+    </footer>
+</body>
