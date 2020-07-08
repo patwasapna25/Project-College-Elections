@@ -60,16 +60,26 @@
             font-family: 'Aref Ruqaa', serif;
         }
 
-        section div input {
-            width: 30%;
+        option{
+            color:rgb(73, 69, 69);
+            font-family: 'Aref Ruqaa', serif;
+            /* transition: ease; */
+            
+        }
+
+        section div select {
+            width: 280px;
             height: 40px;
             border-radius: 9px;
-            font-size: 30px;
-            margin: 40px 43px;
+            font-size: 27px;
             background: none;
             color: white;
+            margin-top: 51px;
+            margin-right: 125px;
+            margin-left: 42px;
             outline: none;
             border: 2px solid rgb(79, 108, 109);
+            font-family: 'Aref Ruqaa', serif;
 
         }
 
@@ -85,6 +95,7 @@
             color: white;
             outline: none;
             border: 2px solid rgb(79, 108, 109);
+            font-family: 'Aref Ruqaa', serif;
         }
 
         .btn {
@@ -142,7 +153,14 @@
             <label for="name">
                 <h1>You want to be the part of : </h1>
             </label>
-            <input type="text" name="myName" id="name">
+            <select name="myname" id="name">
+                <option value="cultural">Cultural Council</option>
+                <option value="music">Music Council</option>
+                <option value="sort">Sort Council</option>
+                <option value="sport">Sports Council</option>
+                <option value="ecell">E-cell Council</option>
+                <option value="cr">Class Representative</option>
+            </select>
         </div>
         <div>
             <label for="text">
